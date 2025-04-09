@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tower Builder Arcade Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">Tower Builder Arcade</h1>
+    <div class="scoreboard">
+      <div>Level: <span id="level">1</span></div>
+      <div>Score: <span id="score">0</span></div>
+      <div>Time: <span id="timer">60</span>s</div>
+    </div>
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <button id="startButton">Start Game</button>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="soundSuccess" src="assets/sounds/click.wav"></audio>
+  <audio id="soundFail" src="assets/sounds/fail.wav"></audio>
+  <audio id="soundLevelUp" src="assets/sounds/level-up.wav"></audio>
+  <audio id="soundRain" src="assets/sounds/rain.wav" loop></audio>
+  <audio id="soundSun" src="assets/sounds/sun.wav" loop></audio>
+  <audio id="soundWind" src="assets/sounds/wind.wav" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
